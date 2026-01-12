@@ -1,3 +1,13 @@
+## Tool Call/Response Separation Comparison
+
+|          | Separate Objects/Parts | Within Same Object/Automatic | Separable Within Object | Total Separable |
+|----------|------------------------|------------------------------|------------------------|-----------------|
+| OpenAI   | 40% (Web Search, Function Calling) | 60% (Code Interpreter, File Search, MCP) | 100% - .outputs, .results, .output fields | 100% |
+| Gemini   | 40% (Function Calling, Code Execution) | 60% (Web Search, File Search automatic + MCP N/A) | 33% - executableCode/codeExecutionResult separable | 60% |
+| Claude   | 100% (All tools) | 0% | N/A - Already separate | 100% |
+
+## API Structure Comparison
+
 |          | OpenAI   | Gemini         | Caude    |
 |----------|----------|----------------|----------|
 | API      |[Responses](https://platform.openai.com/docs/api-reference/responses) | [generateContent](https://ai.google.dev/api/generate-content#method:-models.generatecontent)|  [messages](https://platform.claude.com/docs/en/api/python/messages)|
