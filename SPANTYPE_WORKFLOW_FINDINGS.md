@@ -116,7 +116,7 @@ The term "spanType workflow" might refer to:
 
 | File | Lines | Span References | Type References | Workflow References |
 |------|-------|-----------------|-----------------|---------------------|
-| semantic-convention-responses-api.md | 150 | Yes (3 sections) | Multiple | No |
+| semantic-convention-responses-api.md | 149 | Yes (3 sections) | Multiple | No |
 | server_tool_representation.md | 305 | No | Yes (tool types) | No |
 | comparison.md | 55 | No | Yes (tool types) | No |
 | claude-built-in-tools.md | 670 | No | Yes (content types) | No |
